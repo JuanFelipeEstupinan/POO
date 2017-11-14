@@ -11,7 +11,7 @@ public class Env {
 		tableauValeurs.put(nom, valeur);
 	}
 	
-	double obtenirValeur(String nom) {
+	public double obtenirValeur(String nom) {
 		Double valeur = tableauValeurs.get(nom);
 		
 		if(valeur == null){

@@ -1,5 +1,7 @@
 package com.ensimag.expressions;
 
+import com.ensimag.env.Env;
+
 public class Variable extends ExpAbstraite {
 	
 	private String nom;
@@ -8,13 +10,19 @@ public class Variable extends ExpAbstraite {
 		super();
 		this.nom = nom;
 	}
+	
+	public String getNom() {
+		return nom;
+	}
 
 	@Override
 	public String toStringInfixe() {
 		return this.nom;
 	}
 
-	public String getNom() {
-		return nom;
+	@Override
+	public double evaluer(Env env) {
+		return env.obtenirValeur(this.nom);
 	}
+
 }

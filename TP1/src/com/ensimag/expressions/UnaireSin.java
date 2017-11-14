@@ -1,5 +1,7 @@
 package com.ensimag.expressions;
 
+import com.ensimag.env.Env;
+
 public class UnaireSin extends ExpUnaire {
 	
 	public UnaireSin(ExpAbstraite operande) {
@@ -9,5 +11,10 @@ public class UnaireSin extends ExpUnaire {
 	@Override
 	protected String getOperateur() {
 		return "sin";
+	}
+	
+	@Override
+	public double evaluer(Env env) {
+		return Math.sin(operande.evaluer(env));
 	}
 }
