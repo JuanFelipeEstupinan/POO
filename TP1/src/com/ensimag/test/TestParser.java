@@ -10,7 +10,8 @@ public class TestParser {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
         System.out
             .println("Veuillez saisir l'expression en notation infixée. Utilisez des espaces entre chaque element ! : ");
         System.out.println(" Exemple :  + x * sin y 0.1 ");
