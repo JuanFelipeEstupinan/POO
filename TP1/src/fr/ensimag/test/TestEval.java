@@ -1,7 +1,7 @@
-package com.ensimag.test;
+package fr.ensimag.test;
 
-import com.ensimag.env.Env;
-import com.ensimag.expressions.*;
+import fr.ensimag.env.Env;
+import fr.ensimag.expressions.*;
 
 public class TestEval {
 	public static void main(String[] args) {

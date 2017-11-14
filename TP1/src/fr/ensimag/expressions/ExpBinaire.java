@@ -1,4 +1,4 @@
-package com.ensimag.expressions;
+package fr.ensimag.expressions;
 
 public abstract class ExpBinaire extends ExpAbstraite {
 	

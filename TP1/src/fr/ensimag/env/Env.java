@@ -1,4 +1,4 @@
-package com.ensimag.env;
+package fr.ensimag.env;
 
 import java.util.HashMap;
 import java.util.NoSuchElementException;

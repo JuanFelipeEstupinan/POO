@@ -1,6 +1,6 @@
-package com.ensimag.test;
+package fr.ensimag.test;
 
-import com.ensimag.expressions.*;
+import fr.ensimag.expressions.*;
 
 public class TestAffichageInfixe {
     public static void main(String[] args) {

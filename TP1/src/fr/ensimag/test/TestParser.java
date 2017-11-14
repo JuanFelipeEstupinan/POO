@@ -1,9 +1,9 @@
-package com.ensimag.test;
+package fr.ensimag.test;
 
 import java.util.Scanner;
 
-import com.ensimag.env.Env;
-import com.ensimag.expressions.*;
+import fr.ensimag.env.Env;
+import fr.ensimag.expressions.*;
 
 
 public class TestParser {

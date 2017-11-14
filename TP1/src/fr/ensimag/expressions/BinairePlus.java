@@ -1,6 +1,6 @@
-package com.ensimag.expressions;
+package fr.ensimag.expressions;
 
-import com.ensimag.env.Env;
+import fr.ensimag.env.Env;
 
 public class BinairePlus extends ExpBinaire {
 
