@@ -16,6 +16,7 @@ public class Scheduler {
 	public JobId addJob(String execFile, int dureeMax, String userId) {
 		Job newJob = new Job(new JobId(jobCount), dureeMax, execFile);
 		jobCount++;
+		jobSet.put(newJob.getJobId(), newJob);
 		return newJob.getJobId();
 	}
 	
@@ -27,7 +28,7 @@ public class Scheduler {
 		// Get user with highest priority
 		User nextUser = UserQueue.peek();
 		// Retrieve and remove from queue
-		Job nextJob = jobQueue.poll();
+		Job nextJob = nextUser.getJobs().pollFirst();
 		// Remove from HashMap
 		jobSet.remove(nextJob.getJobId());
 		// Update users score
